@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/clerk-react";
 import { useMutation } from "convex/react";
 import { toast } from "sonner";
+import { Lightbulb, MoreVertical, Trash } from "lucide-react";
 
 import { Id } from "@/convex/_generated/dataModel";
 import { api } from "@/convex/_generated/api";
@@ -21,7 +22,6 @@ import {
     PopoverTrigger
 } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
-import { Lightbulb, MoreVertical, Trash } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 
 interface MenuProps {
@@ -63,6 +63,10 @@ const Menu = ({ documentId }: MenuProps) => {
               alignOffset={8}
               forceMount
             >
+                <DropdownMenuItem>
+                    <Lightbulb className="w-4 h-4 text-yellow-300 animate-pulse mr-2" />
+                    Notes save automatically.
+                </DropdownMenuItem>
                 <DropdownMenuItem onClick={onArchive}>
                   <Trash className="w-4 h-4 mr-2" />
                   Delete
