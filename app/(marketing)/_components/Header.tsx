@@ -13,7 +13,7 @@ export const Header = () => {
 
     return (
         <div className="max-w-3xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">Your Plans, Documents <span className="bg-blue-600 p-0">&</span> Ideas — Unified. Welcome to <span className="underline">Hola!</span></h1>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">Your Plans, Documents & Ideas — Unified. Welcome to <span className="underline">Hola!</span></h1>
             <h3 className="text-base sm:text-xl md:text-2xl font-medium">
                 Hola! is a connected workspace where 
                 <br />
